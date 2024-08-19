@@ -31,11 +31,13 @@ Players schema:
 
 ![image](https://github.com/user-attachments/assets/076a63ac-1cd7-4871-a2fa-4c5e19b26d2a)
 
-Lastly, data is written to an SQL data warehouse.
+Lastly, data is written to an SQL data warehouse in Azure.
+
+After that, the data is ready to be used in analytics.
 
 ## Analytics dashboard in Power BI
 
-Example pages
+Power BI was used to create analytics about games, teams, goals and penalties. Some example pages below:
 
 ![image](https://github.com/user-attachments/assets/81de9986-e3f1-428a-96e7-20e246cdb27c)
 
