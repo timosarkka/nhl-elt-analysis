@@ -1,4 +1,4 @@
-# NHL 2008-2024 data ELT and Analysis
+# Unpacking 16 Years of NHL Data: Trends And Analysis
 
 ## Overview
 
