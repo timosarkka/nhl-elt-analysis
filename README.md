@@ -1,4 +1,4 @@
-# Unpacking 16 Years of NHL Data: Trends And Analysis
+# Unpacking 16 Years of NHL Data
 
 ## Overview
 
