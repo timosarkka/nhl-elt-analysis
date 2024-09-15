@@ -1,4 +1,4 @@
-# Unpacking 16 Years of NHL Data
+# Unpacking 16 Years of NHL Data: Trends and Insights
 
 ## 1. Introduction
 
@@ -63,22 +63,34 @@ Players schema:
 
 ![image](https://github.com/user-attachments/assets/076a63ac-1cd7-4871-a2fa-4c5e19b26d2a)
 
-You can see all of the details in code by checking nhl_games_notebook.ipynb and nhl_players_notebook.ipynb 
+You can see all of the details in code by checking nhl_games_notebook.ipynb and nhl_players_notebook.ipynb.
 
 ## 7. Loading Data
 
-Lastly, data is written to an SQL data warehouse and then it is ready to be used for analytics. Luckily this is also just one line of code when using the Spark SQL Analytics libraries.
+Last, data was written to an SQL data warehouse to be used for analytics. 
+
+Luckily this is also just one line of code when using the Azure Synapse Dedicated SQL Pool Connector.
 
 ## 8. Results and Analysis
 
-Power BI was used to create analytics about games, teams, goals and penalties. Some example pages below:
+Power BI was used to create analytics about games, teams, goals and penalties.
+
+In total, 32 teams across 16 seasons were analyzed. There were 20,430 games in the dataset. Below also some additional metrics of the analyzed data:
 
 ![image](https://github.com/user-attachments/assets/81de9986-e3f1-428a-96e7-20e246cdb27c)
 
+It was interesting to find out that the average goal per game -value (i.e. the sum of home and away team goals) had risen from approx 5.7 in 2008 to 6.2 in 2024. Also, the amount of goals per game per month seems to always stay pretty constant throughout the season. The only exception is the end of the regular season and playoffs during April-May, when the average amount of goals seems to always rise.
+
 ![image](https://github.com/user-attachments/assets/f657fc72-c5d7-44cc-a2fb-f26dcab44ca6)
 
+Despite the fact that the overall amount of goals per game has gone up, the amount of powerplay goals seems to have fallen. In 2008, around 25-26% of goals were powerplay goals in 5-on-4 situations. In 2024 this had gone down to around 20-21%.
+
 ![image](https://github.com/user-attachments/assets/20af85e1-ede5-41d5-9277-be059f17fb79)
+
+Also penalty minutes per game has come down significantly since 2008, averaging now around 6-7 minutes per game (over 10 minutes per game in 2008). It seems that the top 5 teams taking most penalties are Tampa Bay Lightning, Anaheim Ducks, Boston Bruins, Philadelphia Flyers and Pittsburgh Penguins.
 
 ![image](https://github.com/user-attachments/assets/35bae7f2-e15c-4895-9d31-84560a11a27d)
 
 ## 9. Future Work
+
+Moneypuck.com offers a lot of other datasets, that were not utilized in this project, e.g. betting and odds-related. Also, one could concentrate on analyzing the individual player data with advanced metrics like Corsi, Fenwick, xG and so forth. Complete ML models could be built with the source data.
